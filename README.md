@@ -22,6 +22,10 @@ The ```requirements.txt ```file should list all Python libraries that your noteb
 pip install -r requirements.txt
 ```
 
+## Note
+
+By default, the code was written for the data saved in .mat format. User can change the data loading method according to their own data format.
+
 ## Acknowledgement
 If this code is helpful to your research, please consider citing our paper by:
 ```
