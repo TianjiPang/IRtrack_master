@@ -22,6 +22,24 @@ The ```requirements.txt ```file should list all Python libraries that your noteb
 pip install -r requirements.txt
 ```
 
+## Running
+
+To run with default parameters, simply call
+
+```
+python main.py
+````
+
+This will by default use the first image as the reference image and do the motion correction for the rest of images sequentially.
+
+User can specify the ID of the subject for motion correction by adding the subject ID in the end of the command. For example:
+
+```
+python main.py 6
+```
+
+will do the motion correction for the subject 6.
+
 ## Note
 
 By default, the code was written for the data saved in .mat format. User can change the data loading method according to their own data format.
