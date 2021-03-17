@@ -3,7 +3,6 @@
 import os
 import glob
 import types
-import json
 from collections import Sequence, namedtuple
 import numpy as np
 import scipy.io as sio
