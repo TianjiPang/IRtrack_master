@@ -22,7 +22,7 @@ The ```requirements.txt ```file should list all Python libraries that your noteb
 pip install -r requirements.txt
 ```
 
-## Running
+## Quickstart
 
 To run with default parameters, simply call
 
@@ -41,8 +41,11 @@ python main.py 6
 will do the motion correction for the subject 6.
 
 ## Note
+You should quality check the videos before performing the motion correction. Ideally, subject should face to the camera and all frames should successfully capture the full face of subject. 
 
-By default, the code was written for the data saved in .mat format. User can change the data loading method according to their own data format.
+By default, the code was written for the data saved in .mat format. The data input are mat file arrays corresponding to each frame of the video. User can change the data loading method according to their own data format.
+
+To do the motion correction, user should select a reference frame and input it in the code. All the other frames will be motion corrected corresponding to this frame. The first frame of the video is set as the reference frame by default. User can change the reference frame by changing the value of the parameter 'frame_ix' in the code.
 
 ## Acknowledgement
 If this code is helpful to your research, please consider citing our paper by:
